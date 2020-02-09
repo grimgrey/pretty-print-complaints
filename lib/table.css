@@ -1,0 +1,201 @@
+@page {
+  size: A4;
+  margin-top: 2cm;
+  margin-bottom:2cm;
+  margin-right: 2cm;
+  margin-left: 2cm;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  padding:40px;
+  font-family: monospace, sans-serif;
+}
+div {
+  height: 100%;
+}
+.pure-table {
+  /* Remove spacing between table cells (from Normalize.css) */
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+  height: 95%;
+}
+
+.pure-table caption {
+  color: #000;
+  font: italic 85%/1 arial, sans-serif;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.pure-table td,
+.pure-table th {
+  border-left: 1px solid #cbcbcb;/*  inner column border */
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible; /*to make ths where the title is really long work*/
+  padding: 0.5em 1em; /* cell padding */
+}
+
+.pure-table thead {
+  background-color: #e0e0e0;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+/*
+striping:
+ even - #fff (white)
+ odd  - #f2f2f2 (light gray)
+*/
+.pure-table td {
+  background-color: transparent;
+}
+.pure-table-odd td {
+  background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #f2f2f2;
+}
+
+/* BORDERED TABLES */
+.pure-table-bordered td {
+  border-bottom: 1px solid #cbcbcb;
+}
+.pure-table-bordered tbody > tr:last-child > td {
+  border-bottom-width: 0;
+}
+
+
+/* HORIZONTAL BORDERED TABLES */
+
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+.pure-table-horizontal tbody > tr:last-child > td {
+  border-bottom-width: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    font-family: monospace, sans-serif;
+    font-size: 10px;
+    padding: 10px;
+  }
+  div {
+    height: 100%;
+  }
+  .pure-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+    margin: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  .pure-table td,
+  .pure-table th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.5em 0.3em; /* cell padding */
+  }
+  
+  .pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+  }
+  
+  /*
+  striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+  */
+  .pure-table td {
+    background-color: transparent;
+  }
+  .pure-table-odd td {
+    background-color: #f2f2f2;
+  }
+  
+  /* nth-child selector for modern browsers */
+  .pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+  }
+  
+  /* BORDERED TABLES */
+  .pure-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+  }
+  .pure-table-bordered tbody > tr:last-child > td {
+    border-bottom-width: 0;
+  }
+  
+  
+  /* HORIZONTAL BORDERED TABLES */
+  
+  .pure-table-horizontal td,
+  .pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+  }
+  .pure-table-horizontal tbody > tr:last-child > td {
+    border-bottom-width: 0;
+  }
+
+  /* SETTING COLUMN WIDTH */
+  .column-header:nth-child(1) {
+    width: 7%;
+  }
+
+  .column-header:nth-child(2) {
+    width: 11%;
+  }
+
+  .column-header:nth-child(3) {
+    width: 10%;
+  }
+
+  .column-header:nth-child(4) {
+    width: 8%;
+  }
+
+  .column-header:nth-child(5) {
+    width: 15%;
+  }
+
+  .column-header:nth-child(7) {
+    width: 9%;
+  }
+}

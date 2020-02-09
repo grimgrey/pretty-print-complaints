@@ -4,7 +4,8 @@
   "description": "Pretty Prints CSV files with the required data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "grey",
   "license": "ISC",
@@ -12,7 +13,10 @@
     "chalk": "^3.0.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
-    "touch": "^3.1.0"
+    "csv-parse": "^4.8.5",
+    "puppeteer": "^2.1.1",
+    "touch": "^3.1.0",
+    "underscore": "^1.9.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
