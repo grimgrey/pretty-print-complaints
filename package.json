@@ -1,0 +1,11 @@
+{
+  "name": "pretty-print-complaints",
+  "version": "1.0.0",
+  "description": "Pretty Prints CSV files with the required data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "grey",
+  "license": "ISC"
+}
